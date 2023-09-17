@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受信HTML</title>
+    <script>
+        window.onload = function() {
+            // URLを取得
+            const url = new URL(window.location.href);
+
+            // URLSearchParamsオブジェクトを取得
+            const params = url.searchParams;
+
+            // consoleに受け取ったパラメータを出力
+            console.log(params);
+
+            // パラメータから「username」を取得
+            const username = params.get("username");
+
+            // IDを使ってspan要素を取得する
+            const span = document.getElementById("receivedName");
+            // 取得したspan要素に受け取ったパラメータを代入
+            span.innerText = username;
+        }
+    </script>
+</head>
+<body>
+    こんにちは、 <span id="receivedName"></span> さん！
+</body>
+</html>

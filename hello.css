@@ -1,0 +1,15 @@
+p {
+    text-decoration: underline;
+  }
+  
+  #red {
+    color: #FF0000;
+  }
+  
+  .big {
+    font-size: 1.5em;
+  }
+  
+  .blue {
+    color: blue;
+  }

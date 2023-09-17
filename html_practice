@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>HTML入門-フォームの作成</title>
+</head>
+<body>
+<form action="#" method="post">
+	<p>お名前（必須）：<br>
+	<input type="text" cols="100" name="name"></p>
+	<p>メールアドレス：<br>
+	<input type="text" name="mail"></p>
+    <p>お問い合わせ内容:<br>
+        <textarea name="comment" cols="30" rows="5"></textarea></p> 
+</form>
+</body>
+</html>

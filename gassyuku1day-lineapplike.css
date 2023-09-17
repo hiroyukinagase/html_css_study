@@ -1,0 +1,139 @@
+.p {
+  text-decoration: underline;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.flex {
+  display: flex;
+}
+.flexaaa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big {
+  font-size: 1.5em;
+}
+
+.blue {
+  color: blue;
+}
+
+.balloon1-left {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+}
+
+.balloon1-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+
+.balloon1-left p {
+  margin: 0;
+  padding: 0;
+}
+
+.balloon1-right {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 15px 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+}
+
+.balloon1-right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #e0edff;
+}
+
+.balloon1-right p {
+  margin: 0;
+  padding: 0;
+}
+
+/*つかえなかったごみ*/
+.resize_image03 {
+  float: left;
+  width: 10em;
+  height: 10em;
+  border: 3px double #ccc;
+  margin: 0 0.3em 0.3em 0;
+  overflow: hidden;
+}
+.resize_image03 img {
+  margin: -75px 0 0 -75px;
+}
+
+/*画像を文字サイズに*/
+.sample img {
+  height: 16px;
+}
+
+/* ３つめの要素から右端に */
+.divide_3 {
+  display: flex;
+}
+.divide_3 > div:nth-of-type(3) {
+  margin-left: auto;
+}
+
+.divide_3 > div {
+  margin: 5px;
+}
+
+/* 4つめの要素から右端に */
+.divide_4 {
+  display: flex;
+}
+.divide_4 > div:nth-of-type(4) {
+  margin-left: auto;
+}
+
+/* 3行目の楕円 */
+.border-radius {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  background-color: rgb(99, 103, 126);
+  border-radius: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+/*gomi
+
+.right_in {
+  justify-content: flex-end;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+*/
