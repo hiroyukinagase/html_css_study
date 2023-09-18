@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="gassyuku1day-lineapplike.css" />
   </head>
 
-  <body>
+  <body class="line-bc">
+    <!--①LINE会話全体を囲う-->
     <!----- ヘッダー ----->
 
     <header>
@@ -16,15 +17,15 @@
       <div class="divide_3">
         <div>22:36</div>
         <div class="sample">
-          <img src="C:\xampp\htdocs\selfphp\iggy_Task\icon\ifn1133.svg" />
+          <img src="icon\ifn1133.svg" />
         </div>
 
         <div class="sample right_in">
-          <img src="C:\xampp\htdocs\selfphp\iggy_Task\icon\ifn1137.svg" />
+          <img src="icon\ifn1137.svg" />
         </div>
 
         <div class="sample right_in">
-          <img src="C:\xampp\htdocs\selfphp\iggy_Task\icon\ifn1141.svg" />
+          <img src="icon/ifn1141.svg" />
         </div>
       </div>
 
@@ -37,15 +38,15 @@
         <div>&nbsp;永瀬博之</div>
 
         <div class="sample">
-          <img src="C:\xampp\htdocs\selfphp\iggy_Task\icon\ifn1142.svg" />
+          <img src="icon\ifn1142.svg" />
         </div>
 
         <div class="sample">
-          <img src="C:\xampp\htdocs\selfphp\iggy_Task\icon\ifn1148.svg" />
+          <img src="icon\ifn1148.svg" />
         </div>
 
         <div class="sample">
-          <img src="C:\xampp\htdocs\selfphp\iggy_Task\icon\ifn1150.svg" />
+          <img src="icon\ifn1150.svg" />
         </div>
       </div>
 
@@ -68,17 +69,27 @@
       -->
 
       <!----- 3行目 ----->
-      <div class="border-radius flex">
-        <div class="sample">
-          <img src="C:\xampp\htdocs\selfphp\iggy_Task\icon\ifn1156.svg" />
-        </div>
+
+      <!-- 3行目没
+      <div class="sample">
+        <img src="icon\ifn1156.svg" />
+      </div>
+      <div class="border-radius">
         <div class="center">ここから未読メッセージ</div>
+      </div>
+       -->
+
+      <div class="picture_center_font">
+        <img src="icon\ifn1156.svg" />
+        <p class="border-radius">ここから未読メッセージ</p>
       </div>
     </header>
     <!----- ヘッダー END ----->
 
     <!----- メインコンテンツ ----->
-    <main>
+
+    <!-- 旧吹き出し    
+    
       <div></div>
       <section>
         <h2>タイトル</h2>
@@ -87,10 +98,102 @@
         <p class="balloon1-right">こんいちははああ</p>
       </section>
     </main>
+    -->
+
+    <!-- 丸パクリ -->
+    <main>
+      <!--②左コメント始-->
+      <div class="balloon6">
+        <div class="faceicon">
+          <img src="icon\エッフェル塔.jpg" />
+        </div>
+        <div class="chatting">
+          <div class="says">
+            <p>左ふきだし文</p>
+          </div>
+        </div>
+      </div>
+      <!--②/左コメント終-->
+
+      <!--③右コメント始-->
+      <div class="mycomment">
+        <p>右ふきだし文</p>
+
+        <!--/③右コメント終-->
+      </div>
+
+      <!--②左コメント始-->
+      <div class="balloon6">
+        <div class="faceicon">
+          <img src="icon\エッフェル塔.jpg" />
+        </div>
+        <div class="chatting">
+          <div class="says">
+            <p>左ふきだし文</p>
+          </div>
+        </div>
+      </div>
+      <!--②/左コメント終-->
+
+      <!--②左コメント始-->
+      <div class="balloon6">
+        <div class="faceicon">
+          <img src="icon\エッフェル塔.jpg" />
+        </div>
+        <div class="chatting">
+          <div class="says">
+            <p>左ふきだし文</p>
+          </div>
+        </div>
+      </div>
+      <!--②/左コメント終-->
+
+      <!--③右コメント始-->
+      <div class="mycomment">
+        <p>右ふきだし文</p>
+
+        <!--/③右コメント終-->
+      </div>
+
+      <!--③右コメント始-->
+      <div class="mycomment">
+        <p>右ふきだし文</p>
+
+        <!--/③右コメント終-->
+      </div>
+    </main>
+    <!--/①LINE会話終了-->
+
     <!----- メインコンテンツ END ----->
 
     <!----- フッター ----->
-    <footer>フッター</footer>
-    <!----- フッター END ----->
+
+    <footer class="footer_color divide_3">
+      <!-- 最後の行第二案 -->
+      <div class="sample img">
+        <img src="icon\ifn1156.svg" />
+      </div>
+      <form action="”#”" method="get">
+        <textarea
+          name="textaera"
+          rows="”3″"
+          cols="”50″"
+          wrap="”hard”"
+          class="border-none border-radius_2"
+        >
+          Aa
+          </textarea
+        >
+      </form>
+      <div class="sample img">
+        <img src="icon\ifn1156.svg" />
+      </div>
+      <div class="sample img">
+        <img src="icon\ifn1156.svg" />
+      </div>
+      <div class="sample img">
+        <img src="icon\ifn1156.svg" />
+      </div>
+    </footer>
   </body>
 </html>

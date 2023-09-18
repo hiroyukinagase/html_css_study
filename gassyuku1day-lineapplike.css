@@ -34,6 +34,7 @@
   background: #e0edff;
 }
 
+/* 左吹き出し */
 .balloon1-left:before {
   content: "";
   position: absolute;
@@ -49,6 +50,7 @@
   padding: 0;
 }
 
+/* 右吹き出し */
 .balloon1-right {
   position: relative;
   display: inline-block;
@@ -116,13 +118,176 @@
 
 /* 3行目の楕円 */
 .border-radius {
-  width: 100%;
-  height: 20px;
-  line-height: 20px;
-  background-color: rgb(99, 103, 126);
+  width: 102%;
+  height: 22px;
+  line-height: 22px;
+  background-color: rgb(99, 103, 126, 0.5);
   border-radius: 100vh;
   color: #fff;
   text-align: center;
+}
+
+.border-radius_2 {
+  width: 70%;
+  height: 22px;
+  line-height: 22px;
+  background-color: rgb(99, 103, 126, 0.5);
+  border-radius: 100vh;
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+
+.border_none {
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.center {
+  text-align: center;
+}
+
+/* 画像の中央に文字を配列するcss */
+
+.picture_center_font {
+  position: relative;
+}
+
+.picture_center_font p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  /*文字の装飾は省略*/
+}
+
+.picture_center_font img {
+  display: flex;
+  height: 16px;
+  margin-right: auto;
+}
+
+/* 画像の中央に文字を配列するcss 最後の行のやつ */
+
+.picture_center_font2 {
+  position: relative;
+}
+
+.picture_center_font2 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  /*文字の装飾は省略*/
+}
+
+.picture_center_font2 img {
+  display: flex;
+  height: 16px;
+  margin-right: auto;
+}
+
+/******** 丸パクリ ********/
+/*以下、①背景色など*/
+.line-bc {
+  padding: 20px 10px;
+  max-width: 450px;
+  margin: 15px auto;
+  text-align: right;
+  font-size: 14px;
+  background: #7da4cd;
+}
+
+/*以下、②左側のコメント*/
+.balloon6 {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.balloon6 .faceicon {
+  float: left;
+  margin-right: -50px;
+  width: 40px;
+}
+
+.balloon6 .faceicon img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.balloon6 .chatting {
+  width: 100%;
+  text-align: left;
+}
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 50px;
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #edf1ee;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+/*以下、③右側の緑コメント*/
+.mycomment {
+  margin: 10px 0;
+}
+.mycomment p {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #30e852;
+  font-size: 15px;
+}
+
+.mycomment p:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #30e852;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+
+.footer_color {
+  padding: 20px 10px;
+  max-width: 450px;
+  margin: 15px auto;
+  text-align: right;
+  font-size: 14px;
+  background: #9dacbd;
 }
 
 /*gomi
@@ -137,3 +302,7 @@
 }
 
 */
+
+.to_left {
+  padding-left: 20px;
+}
