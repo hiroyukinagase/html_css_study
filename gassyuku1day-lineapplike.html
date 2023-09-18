@@ -173,18 +173,17 @@
       <div class="sample img">
         <img src="icon\ifn1156.svg" />
       </div>
-      <form action="”#”" method="get">
-        <textarea
-          name="textaera"
-          rows="”3″"
-          cols="”50″"
-          wrap="”hard”"
-          class="border-none border-radius_2"
-        >
-          Aa
-          </textarea
-        >
-      </form>
+      <!-- <form action="”#”" method="get"> -->
+      <input
+        type="text"
+        id="nameText"
+        name="textaera"
+        rows="”3″"
+        cols="”50″"
+        wrap="”hard”"
+        class="border-none border-radius_2"
+      />
+      <!-- </form> -->
       <div class="sample img">
         <img src="icon\ifn1156.svg" />
       </div>
@@ -195,5 +194,18 @@
         <img src="icon\ifn1156.svg" />
       </div>
     </footer>
+
+    <script>
+      function inputChange() {
+        console.log("Eiffel");
+      }
+
+      function butotnClick() {
+        msg.innerText = "お名前は" + nameText.value + "さんですね";
+      }
+
+      let nameText = document.getElementById("nameText");
+      nameText.addEventListener("change", inputChange);
+    </script>
   </body>
 </html>

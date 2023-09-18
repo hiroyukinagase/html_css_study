@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>サイトタイトル</title>
+    <meta name="description" content="サイトキャプションを入力" />
+    <meta name="keywords" content="サイトキーワードを,で区切って入力" />
+    <link rel="stylesheet" href="javascript_paractice.css" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="sample.js"></script>
+  </head>
+
+  <body>
+    <!----- ヘッダー ----->
+    <header>ヘッダー</header>
+    <nav>ナビ</nav>
+    <!----- ヘッダー END ----->
+
+    <!----- メインコンテンツ ----->
+    <p>サンプルページです。</p>
+
+    <p>
+      <label>名前：<input type="text" id="nameText" /></label>
+      <input type="button" value="Check" id="checkButton" />
+    </p>
+
+    <p id="msg"></p>
+
+    <script>
+      function butotnClick() {
+        msg.innerText = "お名前は" + nameText.value + "さんですね";
+      }
+
+      let nameText = document.getElementById("nameText");
+      nameText.value = "名前";
+      let msg = document.getElementById("msg");
+
+      let checkButton = document.getElementById("checkButton");
+      checkButton.addEventListener("click", butotnClick);
+    </script>
+    <!----- メインコンテンツ END ----->
+
+    <!----- フッター ----->
+    <footer>フッター</footer>
+    <!----- フッター END ----->
+  </body>
+</html>
