@@ -161,9 +161,26 @@
 
         <!--/③右コメント終-->
       </div>
-    </main>
-    <!--/①LINE会話終了-->
 
+      <!--②左コメント始-->
+      <div class="balloon6">
+        <div class="faceicon">
+          <img src="icon\エッフェル塔.jpg" />
+        </div>
+        <div class="chatting">
+          <div class="says">
+            <p id="msg"></p>
+          </div>
+        </div>
+      </div>
+      <!--②/左コメント終-->
+
+      <script>
+        if ()
+      </script>
+
+      <!--/①LINE会話終了-->
+    </main>
     <!----- メインコンテンツ END ----->
 
     <!----- フッター ----->
@@ -174,15 +191,18 @@
         <img src="icon\ifn1156.svg" />
       </div>
       <!-- <form action="”#”" method="get"> -->
-      <input
-        type="text"
-        id="nameText"
-        name="textaera"
-        rows="”3″"
-        cols="”50″"
-        wrap="”hard”"
-        class="border-none border-radius_2"
-      />
+      <p>
+        <input
+          type="text"
+          id="nameText"
+          name="textaera"
+          rows="”3″"
+          cols="”50″"
+          wrap="”hard”"
+          class="border-none border-radius_2"
+        />
+        <input type="button" value="Check" id="checkButton" />
+      </p>
       <!-- </form> -->
       <div class="sample img">
         <img src="icon\ifn1156.svg" />
@@ -196,16 +216,24 @@
     </footer>
 
     <script>
-      function inputChange() {
-        console.log("Eiffel");
+      function butotnClick() {
+        msg.innerText = nameText.value;
       }
 
-      function butotnClick() {
-        msg.innerText = "お名前は" + nameText.value + "さんですね";
+      function inputChange(event) {
+        msg.innerText = nameText.value;
       }
 
       let nameText = document.getElementById("nameText");
+      nameText.value = "";
+      // let msg = document.getElementById("msg");
+
+      let checkButton = document.getElementById("checkButton");
+      checkButton.addEventListener("click", butotnClick);
+
+      let nameText = document.getElementById("nameText");
       nameText.addEventListener("change", inputChange);
+      let msg = document.getElementById("msg");
     </script>
   </body>
 </html>
