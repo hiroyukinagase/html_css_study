@@ -216,20 +216,9 @@
     </footer>
 
     <script>
-      function butotnClick() {
-        msg.innerText = nameText.value;
-      }
-
       function inputChange(event) {
         msg.innerText = nameText.value;
       }
-
-      let nameText = document.getElementById("nameText");
-      nameText.value = "";
-      // let msg = document.getElementById("msg");
-
-      let checkButton = document.getElementById("checkButton");
-      checkButton.addEventListener("click", butotnClick);
 
       let nameText = document.getElementById("nameText");
       nameText.addEventListener("change", inputChange);
